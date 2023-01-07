@@ -2,7 +2,7 @@ package Class1;
 
 public class BabyMath {
     
-    // Main Function
+    // Main Function. This runs first.
     public static void main(String[] args) {
           
         // Let number = 5
@@ -14,7 +14,6 @@ public class BabyMath {
         number = 3;
 
         int w = x + number + x;
-       
         
         w = w * 2;
 

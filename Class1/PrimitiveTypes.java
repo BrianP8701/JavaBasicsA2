@@ -11,7 +11,7 @@ public class PrimitiveTypes {
 
         String myFavoriteAnimal = "Dog";
 
-        System.out.println();
+        System.out.println(x + y + myFavoriteAnimal);
 
         /*
          * Int - integer
