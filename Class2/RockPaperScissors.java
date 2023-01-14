@@ -34,17 +34,25 @@ public class RockPaperScissors {
         else b = 3;
 
         System.out.println(whoWon(a, b));
+
+        scan.close();
     }
 
 
 
     // Return a sentence declaring if player 1 or player 2 won
     public static String whoWon(int a, int b){
-        
-        // Player 1 chose paper, Player 2 chose rock -> Player 1 should win?
-        
-        // if(a == 2 && b == 1) Return player 1 won
 
-        return "Player 1 won!";
+        // Check all the cases where PLAYER 1 wins
+
+        // If player 1 doesen't win player 2 wins
+
+        if(a == b){
+            return "They tied";
+        } else if(a == 1 && b == 3 || a == 2 && b == 1 || a == 3 && b == 2){
+            return "Player 1 won!";
+        } else{
+            return "Player 2 won";
+        }
     }
 }
